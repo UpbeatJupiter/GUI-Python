@@ -26,7 +26,10 @@ class MainWindow:
         self.btn2.pack(pady=(20,0))
 
     def open_new_window(self):
-        self.win2 = Week6SecondWindow.SecondWindow()
+        self.win2 = Week6SecondWindow.SecondWindow(self)
+        self.win2.grab_set()
+    
+    
 
 app = MainWindow()
 app.win.mainloop()
