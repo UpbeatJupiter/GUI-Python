@@ -6,7 +6,6 @@ win = tk.Tk()
 win.title("SEN4017 - Week 3")
 win.geometry("300x300+100+100")
 
-
 label1 = ttk.Label(win, text="Number 1: ")
 label2 = ttk.Label(win, text="Number 2: ")
 label3 = ttk.Label(win, text="Operator: ")
@@ -26,10 +25,8 @@ def click_handler():
     else:
         result = int(entry1.get()) - int(entry2.get())
     
-    button1.configure(text="The result is" + result)
+    button1.configure(text="The result is " + str(result))
     entry1.focus_set()
-
-
 
 button1 = ttk.Button(win, text="Calculate", command=click_handler)
 
@@ -42,7 +39,6 @@ entry2.grid(row=1, column=1, padx= 10, pady= 10)
 combo1.grid(row=2, column=1, padx=(0, 10))
 
 button1.grid(row=3, column=0, columnspan=2, sticky="we")
-
 
 
 win.mainloop()

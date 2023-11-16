@@ -6,7 +6,7 @@ from tkinter import filedialog as fd
 win = tk.Tk()
 win.title("SEN4017 - Week 4")
 win.geometry("500x500+500+200")
-#win.iconbitmap("python.ico")
+win.iconbitmap("python.ico")
 
 def click_handler():
     ttk.Label(win, text=spin_value.get()).pack()

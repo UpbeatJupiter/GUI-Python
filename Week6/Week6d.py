@@ -14,8 +14,6 @@ class Person:
     def __str__(self):
         return self.full_name()
 
-    
-    
 
 class Student(Person):
     def __init__(self, first, last, gpa):

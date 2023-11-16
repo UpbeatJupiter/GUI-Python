@@ -8,7 +8,6 @@ def show_date_time():
     canvas.update()
     configure_canvas()
     
-
 def clear():
     for label in labels:
         label.destroy()

@@ -9,7 +9,6 @@ def open_second_window():
     ttk.Label(win2, text="Second Window").pack(pady=(20,0))
     ttk.Button(win2, text="Close", command=win2.destroy).pack(pady=(20,0))
 
-
 win = tk.Tk()
 win.title("SEN4017 - Week 6")
 win.iconbitmap("python.ico")

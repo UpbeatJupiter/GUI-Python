@@ -3,7 +3,7 @@ from tkinter import ttk
 from datetime import datetime
 
 def show_date_time():
-    labels.append(ttk.Label(text=datetime.now().strftime("%d.%m.%Y - %H:%M:%S"),font=("Arial", 16)))
+    labels.append(ttk.Label(text=datetime.now().strftime("%d.%m.%Y - %H:%M:%S"), font=("Arial", 16)))
     labels[-1].pack(pady=(10,0))
 
 def clear():

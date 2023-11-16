@@ -5,7 +5,7 @@ from time import sleep
 win = tk.Tk()
 win.title("SEN4017 - Week 4")
 win.geometry("500x500+500+200")
-#win.iconbitmap("python.ico")
+win.iconbitmap("python.ico")
 
 def start_progressbar():
     progressbar1.start(interval=100)

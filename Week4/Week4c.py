@@ -6,7 +6,7 @@ from tkinter import filedialog as fd
 win = tk.Tk()
 win.title("SEN4017 - Week 4")
 win.geometry("500x500+500+200")
-#win.iconbitmap("python.ico")
+win.iconbitmap("python.ico")
 
 check_state = tk.BooleanVar()
 
@@ -35,8 +35,7 @@ file_menu = tk.Menu(menubar, tearoff=False)
 
 file_menu.add_command(label="New", accelerator="Ctrl+N", underline=0,
                       command=lambda: msg.showwarning(title="Warning", message="All unsaved progress will be lost!"))
-file_menu.add_command(label="Open...",
-                      command=open_file)
+file_menu.add_command(label="Open...", command=open_file)
 file_menu.add_separator()
 
 sub_menu = tk.Menu(file_menu, tearoff=False)

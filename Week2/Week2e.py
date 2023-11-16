@@ -27,10 +27,6 @@ button1 = ttk.Button(win, text="A Button", command=click_handler) #clickable but
 button1.grid(column=1, row=1)  #after the label, the button will be added next to it
 
 
-
-
-
-
 win.mainloop() #to stay the window open even it has nothing to work ----> keeps the application running
 
 
