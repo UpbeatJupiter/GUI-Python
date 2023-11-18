@@ -14,7 +14,6 @@ class MainWindow:
        self.btn2 = None
        self.create_widgets()
 
-
     def create_widgets(self):
         self.lbl1 = ttk.Label(self.win, text="Main Window", font=("Calibri", 16))
         self.lbl1.pack(pady=(20,0))
