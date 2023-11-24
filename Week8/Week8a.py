@@ -32,8 +32,9 @@ def fill_database():
             ('Alice', 'Lucas', 70),
             ('John', 'Howell', 90)]
 
-    for x in data:
-        cur.execute("insert into GradeBook(fname, lname, grade) values(?, ?, ?)", [x[0], x[1], x[2]])
+    for item in data:
+        # cur.execute("insert into GradeBook(fname, lname, grade) values(?, ?, ?)", [item[0], item[1], item[2]])
+        cur.execute("insert into GradeBook(fname, lname, grade) values(?, ?, ?)", item)
 
     conn.commit()
     conn.close()
