@@ -15,6 +15,7 @@ class GradeList(tk.Toplevel):
         self.geometry("450x200+710+290")
         self.title(parent.window_title)
         self.iconbitmap("python.ico")
+        
         self.create_widgets()
         self.bind_widgets()
         self.list_grades()

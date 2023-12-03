@@ -17,6 +17,7 @@ class MainWindow:
         self.win.title(self.window_title)
         self.win.iconbitmap("python.ico")
         self.win.resizable(False, False)
+        
         self.db = dblib.GradeBookManager()
         self.create_widgets()
 
