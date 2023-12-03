@@ -4,7 +4,6 @@ import tkinter as tk
 from tkinter import scrolledtext
 import sqlite3
 
-
 class W8c:
     def __init__(self):
         self.win = tk.Tk()

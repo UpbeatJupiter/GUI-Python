@@ -43,15 +43,19 @@ class W8b:
     def create_widgets(self):
         self.lbl_fname = ttk.Label(self.win, text="First Name")
         self.lbl_fname.grid(column=0, row=0, padx=15, pady=15)
+
         self.lbl_lname = ttk.Label(self.win, text="Last Name")
         self.lbl_lname.grid(column=0, row=1, padx=15, pady=(0, 15))
+
         self.lbl_grade = ttk.Label(self.win, text="Grade")
         self.lbl_grade.grid(column=0, row=2, padx=15, pady=(0, 15))
 
         self.txt_fname = ttk.Entry(self.win, textvariable=self.fname, width=35)
         self.txt_fname.grid(column=1, row=0, padx=(0, 15), pady=15)
+
         self.txt_lname = ttk.Entry(self.win, textvariable=self.lname, width=35)
         self.txt_lname.grid(column=1, row=1, padx=(0, 15), pady=(0, 15))
+        
         self.txt_grade = ttk.Entry(self.win, textvariable=self.grade, width=35)
         self.txt_grade.grid(column=1, row=2, padx=(0, 15), pady=(0, 15))
 
