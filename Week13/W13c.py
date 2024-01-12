@@ -1,7 +1,7 @@
 from openpyxl import load_workbook
 
 # Load the workbook from an Excel file
-wb = load_workbook("student_list.xlsx")
+wb = load_workbook(".\Week13\student_list.xlsx")
 
 # Get the reference of the active (first) worksheet
 ws1 = wb.active
